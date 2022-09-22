@@ -23,6 +23,8 @@ class ActionMonitors
             new ActionMonitors\SettingMetaboxFieldSavedMonitor($actionMonitor),
             new ActionMonitors\PostMetaboxFieldSavedMonitor($actionMonitor),
             new ActionMonitors\PostAssignedToTermMonitor($actionMonitor),
+            new ActionMonitors\SCPOrderChangeMonitor($actionMonitor),
+            new ActionMonitors\WordpressSEOPostDataMonitor($actionMonitor),
         ];
     }
 
