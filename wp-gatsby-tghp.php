@@ -3,7 +3,7 @@
  * Plugin Name: WP Gatsby TGHP
  * Description: Additional optimisations for a WordPress site to as a source for Gatsby sites.
  * Author: TGHP
- * Version: 0.1
+ * Version: 0.2.0
  */
 
 // Define constants
