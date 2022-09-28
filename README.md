@@ -3,7 +3,7 @@ Common extensions for TGHP projects to the wp-gatsby plugin. While wp-gatsby opt
 data source for Gatsby, wp-gatsby-tghp adds additional layers to further optimize for our projects.
 
 ## OK, what does it actually do?
-### 1. Support further internal invents to trigger wp-gatsby Actions
+### 1. Support further internal events to trigger wp-gatsby Actions
 Actions in wp-gatsby are used to track when something has changed in WordPress so that Gatsby can tell
 what needs to be rebuilt. This plugin adds a few more actions to support our internal needs:
 
