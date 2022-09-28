@@ -11,7 +11,7 @@ what needs to be rebuilt. This plugin adds a few more actions to support our int
 2. Metabox (metabox.io only) field values changed on posts/terms/settings-pages
 3. SimpleCustomOrder post order changed
 4. Yoast SEO field values changed
-5. 
+
 ### 2. Add manual build trigger
 Add a handy button to the dashboard to trigger a build right now.
 
