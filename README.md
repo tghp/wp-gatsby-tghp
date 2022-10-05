@@ -21,4 +21,4 @@ Mainly useful for tracking when successful/failed builds happen. These events ar
 via a widget on the dashboard.
 
 The webhook URL you need to add should be an outgoing notification via:
-`{WP_URL}/wp-json/wp-json/wpgatsbytghp/v1/wpgatsbytghp-receive-webhook`
+`{WP_URL}/wp-json/wpgatsbytghp/v1/wpgatsbytghp-receive-webhook`
