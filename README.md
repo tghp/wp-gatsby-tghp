@@ -20,3 +20,5 @@ Webhooks must be added to Gatsby cloud, but once added, the plugin records what 
 Mainly useful for tracking when successful/failed builds happen. These events are fed back to the user
 via a widget on the dashboard.
 
+The webhook URL you need to add should be an outgoing notification via:
+`{WP_URL}/wp-json/wp-json/wpgatsbytghp/v1/wpgatsbytghp-receive-webhook`
