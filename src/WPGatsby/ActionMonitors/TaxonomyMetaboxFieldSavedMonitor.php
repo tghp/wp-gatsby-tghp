@@ -17,7 +17,7 @@ class TaxonomyMetaboxFieldSavedMonitor extends AbstractActionMonitor
         if ($new !== $old) {
             $screen = get_current_screen();
 
-            if ($screen->taxonomy) {
+            if ($screen->base === 'edit-tags') {
                 $taxonomy = get_taxonomy($screen->taxonomy);
 
                 if (property_exists($taxonomy, 'graphql_single_name') && property_exists($taxonomy, 'graphql_plural_name')) {

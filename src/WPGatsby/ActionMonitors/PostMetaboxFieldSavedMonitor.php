@@ -17,7 +17,7 @@ class PostMetaboxFieldSavedMonitor extends AbstractActionMonitor
         if ($new !== $old) {
             $screen = get_current_screen();
 
-            if ($screen->post_type) {
+            if ($screen->base === 'post') {
                 $post = get_post($object_id);
                 $postType = get_post_type_object($screen->post_type);
 
