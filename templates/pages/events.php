@@ -32,6 +32,7 @@ $gatsbyIncomingEvents = [
 ?>
 <div class="wrap">
     <div class="tablenav top">
+        <i>Webhook URL: <?= site_url('wp-json/wpgatsbytghp/v1/wpgatsbytghp-receive-webhook') ?></i>
         <div class="tablenav-pages one-page"><span class="displaying-num"><?= $totalEvents ?> items</span></div>
         <br class="clear">
     </div>
