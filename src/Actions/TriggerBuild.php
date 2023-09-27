@@ -46,14 +46,6 @@ class TriggerBuild implements ActionInterface
      */
     public function executeNoPriv(): string
     {
-        if (!isset($_POST['resource_id'])) {
-            throw new Exception('Matching resource ID is required');
-        }
-
-        if ($_POST['resource_id'] !== WPGatsbyTGHP()->wpGatsby->getResourceId()) {
-            throw new Exception('Invalid resource ID');
-        }
-
         $this->_triggerBuild();
 
         return json_encode(['success' => true]);

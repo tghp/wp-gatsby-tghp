@@ -40,14 +40,6 @@ class ReceiveWebhook implements ActionInterface
     {
         $data = json_decode(file_get_contents('php://input'), true);
 
-        if (!isset($data['resourceId'])) {
-            throw new Exception('Matching resource ID is required');
-        }
-
-        if ($data['resourceId'] !== WPGatsbyTGHP()->wpGatsby->getResourceId()) {
-            throw new Exception('Invalid resource ID');
-        }
-
         if (!isset($data['event'])) {
             throw new Exception('No event found');
         }

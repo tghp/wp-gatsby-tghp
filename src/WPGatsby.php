@@ -17,11 +17,6 @@ class WPGatsby
      */
     protected $buildWebhookUrl;
 
-    /**
-     * @var string|null
-     */
-    protected $resourceId;
-
     public function __construct()
     {
         if (!in_array('wp-gatsby/wp-gatsby.php', apply_filters('active_plugins', get_option('active_plugins')))) {
@@ -36,9 +31,7 @@ class WPGatsby
             throw new \Exception('WP Gatsby options not found');
         }
 
-        if (isset($wpGatsbyOptions['builds_api_webhook']) &&
-                preg_match('#data_source/publish/([^/]*)#', $wpGatsbyOptions['builds_api_webhook'], $matches)) {
-            $this->resourceId = (string) $matches[1];
+        if (isset($wpGatsbyOptions['builds_api_webhook'])) {
             $this->buildWebhookUrl = (string) $wpGatsbyOptions['builds_api_webhook'];
         } else {
             throw new \Exception('WP Gatsby resource ID not found');
@@ -51,14 +44,6 @@ class WPGatsby
     public function getBuildWebhookUrl()
     {
         return $this->buildWebhookUrl;
-    }
-
-    /**
-     * @return string|null
-     */
-    public function getResourceId()
-    {
-        return $this->resourceId;
     }
 
 }
