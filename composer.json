@@ -1,10 +1,10 @@
 {
   "name": "tghp/wp-gatsby-tghp",
   "type": "wordpress-plugin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "require": {
-    "illuminate/database": "^5.4",
-    "illuminate/pagination": "^5.4",
-    "jimmiw/php-time-ago": "^3.2.4"
+    "illuminate/database": "^12.14",
+    "illuminate/pagination": "^12.14",
+    "jimmiw/php-time-ago": "^3.2.5"
   }
 }
