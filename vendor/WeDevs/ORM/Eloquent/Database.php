@@ -471,4 +471,15 @@ class Database implements ConnectionInterface
     {
         return Arr::get($this->config, $option);
     }
+
+    public function getDatabaseName() 
+    {
+        return $this->getConfig('name');
+    }
+
+    public function scalar($query, $bindings = [], $useReadPdo = true)
+    {
+
+    }
+
 }
