@@ -7,15 +7,15 @@ class AdminPages
 
     public function __construct()
     {
-        add_action('admin_menu', function () {
-            add_management_page(
-                'WP Gatsby TGHP Events',
-                'WP Gatsby TGHP Events',
-                'manage_options',
-                'wpgatsbytghp-events',
-                [$this, 'eventsPage']
-            );
-        });
+        // add_action('admin_menu', function () {
+        //     add_management_page(
+        //         'WP Gatsby TGHP Events',
+        //         'WP Gatsby TGHP Events',
+        //         'manage_options',
+        //         'wpgatsbytghp-events',
+        //         [$this, 'eventsPage']
+        //     );
+        // });
     }
 
     public function eventsPage()
